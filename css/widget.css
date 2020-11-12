@@ -1,0 +1,106 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 44px;
+    height: 44px;
+
+}
+
+#container {
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.more {
+    float: left;
+    background-image: url(images/more.png);
+    background-size: 21px;
+    background-repeat: no-repeat;
+    width: 20px;
+    padding: 20px 20px;
+    background-position: right 12px;
+
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+.containerTab {
+    padding: 20px;
+    color: white;
+    clear: both;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the image */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+.extensionMenuItem {
+    line-height: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 20px;
+    text-decoration: none;
+
+}
+.extensionMenuItem.item {
+    line-height: normal;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    padding: 0;
+}
+.extensionMenuItem.item, .extensionMenuItem.addCustomItem {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #DCDCDC;
+}
+.detail {
+    float: left;
+}
+.itemInfoText{
+    float: left;
+}
+summary {
+    cursor: pointer;
+  }
+button{
+    cursor: pointer;
+}
+.box.linkarea{
+
+    cursor: pointer;
+    color: blue;
+
+}
+.my-box{
+   
+    display: flex;
+}
+.bt{
+   align-items: stretch;
+}

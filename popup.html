@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="myApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="js/dropdown.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>  
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/widget.css">
+    <style>
+      body {
+        width: 400px;
+        height:300px
+      }
+    </style>
+  </head>
+  <body >
+  　<div ng-controller="AppController" >
+    <button  ng-click="openURL()">Register</button>
+      <hr>
+　　　<div>
+      MeetingList
+
+　　　　　<ul>
+ 
+　　　　　　<li style="padding: 5px" ng-repeat="user in users track by $index">
+ 
+            <div class="extensionMenuItem item " > 
+              <div class="d-flex flex-row">
+                <div class="box linkarea w-75" ng-click="open(user.url)">
+                      <area >
+                       {{user.meetingname}}
+                    </area>
+                </div>
+                <div class="my-box w-25"  ng-click="edit($index)"> <button class="bt">Edit</button></div>
+                <div class="my-box w-0"  ng-click="deleteitem($index)"> <button class="bt">Delete</button></div>
+              
+              </div>
+
+            </div>
+          </li>
+        　　</ul>
+       
+　　</div>
+ 
+　　　　
+　　　　　
+ 
+　</div>
+    
+    
+  </body>
+</html>
